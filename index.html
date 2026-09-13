@@ -1,138 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nails by Michelle — Palo Alto (Demo)</title>
-  <meta name="description" content="Intimate Palo Alto nail studio — manicures, pedicures, gel, dip, acrylics, and silk nails. Demo site only.">
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta name="description"
+          content="Nails by Michelle — intimate Palo Alto nail studio at 418 Waverley St. Manicures, pedicures, gel, dip, acrylics, and silk nails. Call to book. Demo site only."/>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" href="images/favicon/likha-logo-64x64.png"/>
+    <link rel="apple-touch-icon" href="images/favicon/apple-likha-logo-180x180.png"/>
+
+    <link href="css/pre-loader.css" rel="stylesheet">
+    <link href="css/templates.css" rel="stylesheet">
+    <link href="css/1-header.css" rel="stylesheet">
+    <link href="css/2-hero.css" rel="stylesheet">
+    <link href="css/3-about-us.css" rel="stylesheet">
+    <link href="css/4-services.css" rel="stylesheet">
+    <link href="css/5-testimonals-gallery.css" rel="stylesheet">
+    <link href="css/6-pricing.css" rel="stylesheet">
+    <link href="css/7-location.css" rel="stylesheet">
+    <link href="css/8-footer.css" rel="stylesheet">
+    <link href="css/media-queries.css" rel="stylesheet">
+    <link href="css/modal-window.css" rel="stylesheet">
+    <link href="css/demo-banner.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Indie+Flower&family=Rubik:wght@400;500;600;700&family=Satisfy&display=swap"
+          rel="stylesheet">
+
+    <title>Nails by Michelle — Palo Alto (Demo)</title>
 </head>
 <body>
-  <div class="demo-banner" role="status">DEMO — not the live Nails by Michelle site</div>
+<!-- Sticky DEMO banner -->
+<div class="demo-banner" role="status">DEMO — not the live Nails by Michelle site</div>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="wrap">
-        <div class="hero-photo">
-          <img
-            src="storefront.jpg"
-            alt="Nails by Michelle storefront at 418 Waverley Street, Palo Alto"
-            width="800"
-            height="500"
-          >
+<header class="header-main sticky hidden-blur">
+    <div class="main-social-box">
+        <ul class="social-icon-mobile">
+            <li><a href="tel:+16503227990" class="main-nav-link" aria-label="Call Nails by Michelle">
+                <ion-icon name="call-outline" class="list-icon"></ion-icon>
+            </a></li>
+        </ul>
+        <div class="logo-text-box">
+            <a href="#hero" class="brand-wordmark">Nails by Michelle</a>
         </div>
-        <h1 id="hero-title">Nails by Michelle</h1>
-        <p class="hero-sub">Also known as Nails By Michelle and Maggie</p>
-        <p class="hero-tagline">Intimate Palo Alto nail studio — manicures, pedicures, gel, dip, acrylics, and silk nails.</p>
-        <a class="btn btn-phone" href="tel:+16503227990">Call (650) 322-7990</a>
-      </div>
+        <div class="main-nav-box">
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li><a href="#services" class="main-nav-link">Services</a></li>
+                    <li><a href="#testimonials-gallery" class="main-nav-link">Gallery</a></li>
+                    <li><a href="#location" class="main-nav-link">Hours &amp; Location</a></li>
+                    <li><a href="tel:+16503227990" class="main-nav-link">Call to Book</a></li>
+                </ul>
+            </nav>
+            <nav class="socials-nav">
+                <ul class="social-list">
+                    <div class="social-icon-div">
+                        <li><a href="tel:+16503227990" class="main-nav-link" aria-label="Call">
+                            <ion-icon name="call-outline" class="list-icon"></ion-icon>
+                        </a></li>
+                    </div>
+                    <li><a href="#" class="main-nav-link nav-call-to-action call-now-btn">Call now</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="button-mobile-nav" aria-label="Menu">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+    </div>
+</header>
+
+<main>
+    <!-- Call modal — Call CTA only (no online booking) -->
+    <div class="pop-up pop-up-1">
+        <div class="overlay-book"></div>
+        <div class="content">
+            <div class="close-pop-up-btn">&times;</div>
+            <h2 class="modal-header"><span>☎️</span> <span class="modal-header-text">Call to Book</span></h2>
+            <p class="pop-up-msg">
+                Today's hours (<span class="day"></span>): 🕒 <span class="time">time</span>
+            </p>
+            <span class="book-now-number">📱 (650) 322-7990</span>
+            <div class="modal-btn-box">
+                <a href="tel:+16503227990" class="modal-call-btn btn--full">Call Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section id="hero" class="hero-section hidden-blur">
+        <div class="hero">
+            <img src="images/hero-section-queries/flower-1-hero-section.png"
+                 alt="" class="hero-flower-effect-1" aria-hidden="true">
+            <img src="images/hero-section-queries/flower-2-hero-section.png"
+                 alt="" class="hero-flower-effect-2" aria-hidden="true">
+            <img src="images/hero-section-queries/sparkle-1-hero-section.png"
+                 alt="" class="hero-sparkle-effect-1 hidden-blur" loading="lazy" aria-hidden="true">
+            <img src="images/hero-section-queries/sparkle-1-hero-section.png"
+                 alt="" class="hero-sparkle-effect-2 hidden-blur" loading="lazy" aria-hidden="true">
+            <img src="images/hero-section-queries/sparkle-1-hero-section.png"
+                 alt="" class="hero-sparkle-effect-3 hidden-blur" loading="lazy" aria-hidden="true">
+            <img src="images/hero-section-queries/sparkle-1-hero-section.png"
+                 alt="" class="hero-sparkle-effect-4 hidden-blur" loading="lazy" aria-hidden="true">
+            <img src="images/hero-section-queries/sparkle-1-hero-section.png"
+                 alt="" class="hero-mobile-border-effect-1" loading="lazy" aria-hidden="true">
+            <img src="images/hero-section-queries/sparkle-1-hero-section.png"
+                 alt="" class="hero-mobile-border-effect-2" loading="lazy" aria-hidden="true">
+
+            <div class="hero-text-box">
+                <h1 class="heading-primary hidden-blur">Nails by Michelle</h1>
+                <p class="hero-description hidden-blur">
+                    Intimate Palo Alto nail studio — manicures, pedicures, gel, dip, acrylics, and silk nails.
+                    Also known as Nails By Michelle and Maggie. Appointments preferred; call to book.
+                </p>
+                <a href="tel:+16503227990" class="btn btn--full margin-right-sm hidden-blur" id="book-now-btn">Call (650) 322-7990</a>
+                <a href="#services" class="btn btn--outline hidden-blur">Services</a>
+            </div>
+
+            <div class="hero-image-box hidden-blur">
+                <picture>
+                    <img src="images/hero/storefront.jpg"
+                         alt="Nails by Michelle storefront at 418 Waverley Street, Palo Alto"
+                         class="hero-img"/>
+                </picture>
+            </div>
+        </div>
     </section>
 
     <!-- Services — no prices -->
-    <section id="services" aria-labelledby="services-title">
-      <div class="wrap">
-        <p class="section-label">What we offer</p>
-        <h2 id="services-title">Services</h2>
-        <ul class="services-list">
-          <li>Manicure &amp; pedicure (including men’s)</li>
-          <li>Gel &amp; liquid gel</li>
-          <li>Dip powder</li>
-          <li>Acrylics &amp; nail art</li>
-          <li>Silk nails</li>
-          <li>Complimentary foot massage with pedicure</li>
-        </ul>
-        <p class="services-note">Ask about pricing when you book. Appointments preferred; walk-ins welcome when there’s room.</p>
-      </div>
-    </section>
-
-    <!-- Hours — PENDING GBP; do not invent a 7-day list -->
-    <section id="hours" aria-labelledby="hours-title">
-      <div class="wrap">
-        <p class="section-label">When</p>
-        <h2 id="hours-title">Hours</h2>
-        <!-- HOURS_FROM_GBP -->
-        <ul class="hours-list">
-          <li><span>Monday</span><span>Closed</span></li>
-          <li><span>Tuesday</span><span>7:00 AM – 3:30 PM</span></li>
-          <li><span>Wednesday</span><span>7:00 AM – 3:00 PM</span></li>
-          <li><span>Thursday</span><span>7:00 AM – 2:30 PM</span></li>
-          <li><span>Friday</span><span>7:00 AM – 3:00 PM</span></li>
-          <li><span>Saturday</span><span>9:00 AM – 5:00 PM</span></li>
-          <li><span>Sunday</span><span>7:00 AM – 1:00 PM</span></li>
-        </ul>
-        <p class="hours-note">Appointments preferred — call ahead.</p>
-      </div>
-    </section>
-
-    <!-- Gallery — real GBP nail work; no fake IG handle -->
-    <section id="gallery" aria-labelledby="gallery-title">
-      <div class="wrap">
-        <p class="section-label">Our work</p>
-        <h2 id="gallery-title">Gallery</h2>
-        <div class="gallery-grid" role="list">
-          <figure class="gallery-card" role="listitem">
-            <img src="gallery-1-web.jpg" alt="Nail art by Michelle — pink and black tips" width="900" height="1125" loading="lazy">
-          </figure>
-          <figure class="gallery-card" role="listitem">
-            <img src="gallery-2-web.jpg" alt="Nail art by Michelle — red cat-eye finish" width="900" height="1125" loading="lazy">
-          </figure>
-          <figure class="gallery-card" role="listitem">
-            <img src="gallery-3-web.jpg" alt="Nail art by Michelle — blue glitter" width="900" height="1125" loading="lazy">
-          </figure>
+    <section id="services" class="services-featured hidden-blur">
+        <div class="container">
+            <h2 class="heading-services-in hidden-blur"><span>Our Services</span></h2>
         </div>
-      </div>
-    </section>
-
-
-    <!-- Visit / map -->
-    <section id="visit" aria-labelledby="visit-title">
-      <div class="wrap">
-        <p class="section-label">Find us</p>
-        <h2 id="visit-title">Visit</h2>
-        <div class="visit-card">
-          <div class="visit-info">
-            <address>
-              418 Waverley St<br>
-              Palo Alto, CA 94301
-            </address>
-            <p class="hint">Near University Ave — intimate studio off the main strip.</p>
-          </div>
-          <iframe
-            class="map-embed"
-            id="map"
-            title="Map of Nails by Michelle at 418 Waverley St, Palo Alto"
-            src="https://maps.google.com/maps?q=418+Waverley+St,+Palo+Alto,+CA+94301&amp;z=15&amp;output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen
-          ></iframe>
-          <a
-            class="map-link"
-            href="https://maps.google.com/?q=418+Waverley+St,+Palo+Alto,+CA+94301"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Open in Google Maps</a>
+        <div class="container grid grid--3--cols margin-bottom-lg">
+            <div class="services">
+                <img src="images/services/manicure.webp" class="nail-img" alt="Manicure service"/>
+                <div class="service-content">
+                    <div class="service-tags">
+                        <span class="tag tag--gel">Gel</span>
+                        <span class="tag tag--regular">Dip</span>
+                    </div>
+                    <p class="service-title">Manicure</p>
+                    <div class="service-attribute">
+                        <p class="service-description">
+                            Classic and gel manicures, dip powder, and careful prep — including men’s manicures.
+                            Ask about pricing when you book.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <img src="images/services/nail-extension.webp" class="nail-img"
+                     alt="Nail extensions and acrylics"/>
+                <div class="service-content">
+                    <div class="service-tags">
+                        <span class="tag tag--gel">Acrylic</span>
+                        <span class="tag tag--regular">Silk</span>
+                    </div>
+                    <p class="service-title">Acrylics &amp; Silk</p>
+                    <div class="service-attribute">
+                        <p class="service-description">
+                            Acrylics, nail art, and silk nails — specialty work for lasting length and design.
+                            Call for details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <img src="images/services/pedicure.webp" class="nail-img"
+                     alt="Pedicure service"/>
+                <div class="service-content">
+                    <div class="service-tags">
+                        <span class="tag tag--gel">Gel</span>
+                        <span class="tag tag--regular">Regular</span>
+                    </div>
+                    <p class="service-title">Pedicure</p>
+                    <div class="service-attribute">
+                        <p class="service-description">
+                            Pedicures with complimentary foot massage. Gel or regular polish —
+                            appointments preferred; walk-ins welcome when there’s room.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="container center-text margin-bottom-lg">
+            <p class="hero-description" style="max-width:48rem;margin:0 auto 2.4rem;">
+                No online menu pricing published here — please call for current rates.
+            </p>
+            <a href="tel:+16503227990" class="btn btn--full">Call (650) 322-7990</a>
+        </div>
     </section>
 
-    <!-- Contact CTA -->
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <p class="section-label">Book</p>
-        <h2 id="contact-title">Ready for your next set?</h2>
-        <p>Call Michelle to book. We’ll take good care of you.</p>
-        <a class="btn btn-phone" href="tel:+16503227990">Call (650) 322-7990</a>
-      </div>
+    <!-- Gallery — real GBP nail photos -->
+    <section id="testimonials-gallery" class="testimonials-gallery-section">
+        <div class="container">
+            <h2 class="heading-services-in"><span>Gallery</span></h2>
+        </div>
+        <div class="section-testimonials grid gallery-only">
+            <div class="testimonials-container hidden">
+                <div class="test-heading-description-container">
+                    <span class="subheading testimonial-header">On Google</span>
+                    <h2 class="heading-secondary"><span class="nice-things-text">4.7 ★ · 45 reviews</span></h2>
+                    <div class="testimonials">
+                        <a href="https://www.google.com/maps/place/Nails+By+Michelle+and+Maggie/@37.4474349,-122.1614332,17z"
+                           class="testimonial-link" target="_blank" rel="noopener noreferrer">
+                            <figure class="testimonial">
+                                <div class="stars">
+                                    <i class="ph-fill ph-star"></i>
+                                    <i class="ph-fill ph-star"></i>
+                                    <i class="ph-fill ph-star"></i>
+                                    <i class="ph-fill ph-star"></i>
+                                    <i class="ph-fill ph-star"></i>
+                                </div>
+                                <blockquote class="testimonial-text">
+                                    See recent reviews on Google Maps. This is a demo site — ratings shown from the public GBP listing.
+                                </blockquote>
+                                <p class="testimonial-name">&mdash;Google Business Profile</p>
+                            </figure>
+                        </a>
+                        <p class="service-description" style="margin-top:2rem;">
+                            Appointments preferred. Call <a href="tel:+16503227990">(650) 322-7990</a> to book.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery">
+                <figure class="gallery-item hidden">
+                    <img src="images/gallery/gallery-1.jpg"
+                         alt="Nail art by Michelle — pink and black tips" loading="lazy"/>
+                </figure>
+                <figure class="gallery-item hidden">
+                    <img src="images/gallery/gallery-2.jpg"
+                         alt="Nail art by Michelle — red cat-eye finish" loading="lazy"/>
+                </figure>
+                <figure class="gallery-item hidden">
+                    <img src="images/gallery/gallery-3.jpg"
+                         alt="Nail art by Michelle — blue glitter" loading="lazy"/>
+                </figure>
+                <div class="popup-img">
+                    <span class="close-img-btn">&times;</span>
+                    <span class="left-arrow arw-btn">&#x3c;</span>
+                    <img alt="Full-size gallery photo" src="images/gallery/gallery-1.jpg" loading="lazy"/>
+                    <span class="right-arrow arw-btn">&#x3e;</span>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>Demo only. Not the live Nails by Michelle website.</p>
+    <!-- Book by phone (replaces pricing — no invented prices) -->
+    <section class="pricing-section" id="pricing">
+        <div class="container flex-column margin-bottom-md">
+            <span class="subheading service-menu-header">Ready to book?</span>
+            <h2 class="heading-services-in"><span class="pricing-font-size">Call to Book</span></h2>
+        </div>
+        <div class="container center-text margin-bottom-lg">
+            <p class="hero-description" style="max-width:52rem;margin:0 auto 2.4rem;">
+                We don’t publish prices online. Call the studio for current rates and availability.
+            </p>
+            <a href="tel:+16503227990" class="btn btn--full">Call (650) 322-7990</a>
+        </div>
+    </section>
+
+    <!-- Location & hours (GBP) -->
+    <section class="location-section" id="location">
+        <div class="container-location flex-column margin-bottom-md">
+            <h2 class="heading-services-in"><span class="pricing-font-size">Hours &amp; Location</span></h2>
+        </div>
+        <div class="container-location grid grid--2--cols col-gap-lg grid-justify-align-center margin-bottom-lg">
+            <div class="center-text hidden">
+                <span class="subheading hidden-vertical">From Google Business Profile</span>
+                <p class="store-hours-header"><span>Service Hours</span></p>
+                <ul class="hours-list">
+                    <li class="individual-hours">
+                        <p class="pricing-text">Monday</p><span>Closed</span>
+                    </li>
+                    <li class="individual-hours">
+                        <p class="pricing-text">Tuesday</p><span>7:00 AM–3:30 PM</span>
+                    </li>
+                    <li class="individual-hours">
+                        <p class="pricing-text">Wednesday</p><span>7:00 AM–3:00 PM</span>
+                    </li>
+                    <li class="individual-hours">
+                        <p class="pricing-text">Thursday</p><span>7:00 AM–2:30 PM</span>
+                    </li>
+                    <li class="individual-hours">
+                        <p class="pricing-text">Friday</p><span>7:00 AM–3:00 PM</span>
+                    </li>
+                    <li class="individual-hours">
+                        <p class="pricing-text">Saturday</p><span>9:00 AM–5:00 PM</span>
+                    </li>
+                    <li class="individual-hours">
+                        <p class="pricing-text">Sunday</p><span>7:00 AM–1:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden-right">
+                <span class="subheading center-text">We are located at:</span>
+                <h2 class="store-loc margin-bottom-md likha-address">418 Waverley St, Palo Alto, CA 94301</h2>
+                <iframe
+                    src="https://maps.google.com/maps?q=418+Waverley+St,+Palo+Alto,+CA+94301&z=16&output=embed"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Map of 418 Waverley St, Palo Alto"
+                    class="likha-map"></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-menu-container">
+            <div class="logo-col">
+                <a href="#hero" class="footer-logo brand-wordmark brand-wordmark--footer">Nails by Michelle</a>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Get In Touch</p>
+                <address class="contacts">
+                    <p>
+                        <a href="https://www.google.com/maps/place/Nails+By+Michelle+and+Maggie/@37.4474349,-122.1614332,17z"
+                           class="footer-link" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="home-outline"></ion-icon>
+                            418 Waverley St, Palo Alto, CA 94301</a><br>
+                        <a href="tel:+16503227990" class="footer-link">
+                            <ion-icon name="call-outline"></ion-icon>
+                            (650) 322-7990</a>
+                    </p>
+                </address>
+            </div>
+            <nav class="socials-col">
+                <p class="footer-heading">Book</p>
+                <ul class="footer-nav socials-footer-nav">
+                    <li>
+                        <a href="tel:+16503227990" class="footer-link">
+                            <ion-icon name="call-outline" class="social-icon"></ion-icon>
+                        </a>
+                        <a href="tel:+16503227990" class="footer-link"><span>Call to book</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="services-col">
+                <p class="footer-heading">On this page</p>
+                <ul class="footer-nav services-footer-nav">
+                    <li><a class="footer-link" href="#services">Services</a></li>
+                    <li><a class="footer-link" href="#testimonials-gallery">Gallery</a></li>
+                    <li><a class="footer-link" href="#location">Hours &amp; Location</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-  </footer>
+    <div class="web-developer-contact">
+        <p class="copyright font-size-sm">
+            Demo only. Not the live Nails by Michelle website.
+        </p>
+        <p class="copyright font-size-sm" style="margin-top:0.8rem;">
+            Layout based on Likha Beauty Studio template (MIT).
+        </p>
+        <p class="copyright font-size-sm" style="margin-top:0.8rem;">
+            &copy; <span class="year">2026</span> · Emerson Demos
+        </p>
+    </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script type="module" src="script/script.js" defer></script>
+<script src="script/book-modal-script.js" defer></script>
+<script src="script/animation-script.js" defer></script>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
 </body>
 </html>

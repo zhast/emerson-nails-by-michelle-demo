@@ -1,0 +1,9 @@
+{
+  "name": "Nails by Michelle (Demo)",
+  "short_name": "Nails Demo",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FAF5EE",
+  "theme_color": "#c4787a",
+  "description": "Demo site for Nails by Michelle, Palo Alto — not the live business website."
+}
