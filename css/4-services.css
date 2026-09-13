@@ -101,3 +101,17 @@
     align-items: center;
     gap: 1.6rem;
 }
+
+
+/* AD: pedicure text-only — collapse image slot, no stretched white hole */
+.services--text-only {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+}
+.services--text-only .service-content {
+    padding-top: 3.2rem;
+}
+.services--text-only .service-title {
+    margin-bottom: 1.6rem;
+}

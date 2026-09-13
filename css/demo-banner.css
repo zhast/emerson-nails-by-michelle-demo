@@ -95,5 +95,3 @@ body .header-main.sticky {
 /* AD optional: pedicure card without hand-manicure photo */
 .service-card:has(img[src*="pedicure"]) img { display: none; }
 
-/* pedicure text-only card */
-.services:not(:has(img)) .service-content { padding-top: 1.2rem; }
