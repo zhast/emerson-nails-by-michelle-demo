@@ -91,3 +91,9 @@ body .header-main.sticky {
 /* AD FAIL #3 */
 .logo-text-box { margin-right: 2.5rem !important; padding-right: 1rem !important; }
 .main-nav-list { column-gap: 1.6rem !important; }
+
+/* AD optional: pedicure card without hand-manicure photo */
+.service-card:has(img[src*="pedicure"]) img { display: none; }
+
+/* pedicure text-only card */
+.services:not(:has(img)) .service-content { padding-top: 1.2rem; }
