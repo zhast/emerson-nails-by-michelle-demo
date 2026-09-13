@@ -62,3 +62,32 @@ body .header-main.sticky {
     font-size: 1.2rem;
   }
 }
+
+/* AD pass: wordmark must not run into nav */
+.brand-wordmark {
+  margin-right: 1.25rem;
+  display: inline-block;
+  white-space: nowrap;
+}
+.logo-text-box {
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+.main-nav {
+  gap: 0.5rem;
+}
+/* Kill leftover hero garnish if any CSS still positions them */
+.hero-flower-effect-1,
+.hero-flower-effect-2,
+.hero-sparkle-effect-1,
+.hero-sparkle-effect-2,
+.hero-sparkle-effect-3,
+.hero-sparkle-effect-4,
+.hero-sparkle-effect-5,
+.hero-sparkle-effect-6 {
+  display: none !important;
+}
+
+/* AD FAIL #3 */
+.logo-text-box { margin-right: 2.5rem !important; padding-right: 1rem !important; }
+.main-nav-list { column-gap: 1.6rem !important; }

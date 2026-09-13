@@ -177,3 +177,32 @@
 .icon-mobile-nav[name="close-outline"] {
     display: none;
 }
+
+/* AD nav gap */
+.logo-text-box { margin-right: 2rem !important; padding-right: 0.75rem; }
+.brand-wordmark { letter-spacing: 0.02em; margin-right: 0.5rem; }
+.main-nav-list { margin-left: 0.5rem; }
+.main-social-box { column-gap: 1.5rem; }
+
+
+/* AD FAIL #3 — hard gap between wordmark and Services */
+.logo-text-box {
+  margin-right: 2.5rem !important;
+  padding-right: 1rem !important;
+  flex-shrink: 0;
+}
+.brand-wordmark {
+  display: inline-block;
+  margin-right: 0 !important;
+  white-space: nowrap;
+}
+.main-nav-box {
+  margin-left: 0.75rem;
+}
+.main-nav-list {
+  gap: 1.6rem !important;
+  margin-left: 0.5rem !important;
+}
+.main-nav-link {
+  padding-left: 0.25rem;
+}
